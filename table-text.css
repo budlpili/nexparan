@@ -1,0 +1,42 @@
+
+/* .boardlist-main{
+    padding:8px 0px;
+}
+table.board-table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+table.board-table th, td{
+    padding:4px 6px;
+    border: 1px solid red;
+}
+
+table td {
+
+}
+table td a{
+    display: block;
+    width:70%;
+    height:16px;
+    white-space:nowrap;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    border: 1px solid red;
+
+} */
+table {
+    width: 100%;
+}
+table td {
+    /* display: block; */
+    max-width: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+td.bl-list-t {
+    width: 70%;
+}
