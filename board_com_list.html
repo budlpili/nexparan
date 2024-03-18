@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./assets/icon/3d-fluency-apple.png"></link>
+    <link rel="icon" href="./assets/icon/3d-fluency-apple.png">
+    </link>
     <title>NEXPARN HOMPAGE</title>
 </head>
 
-<body> 
+<body>
 
     <div class="wrapper">
         <!-- Header -->
@@ -22,10 +23,11 @@
             <div class="header-top mobile-hide header-up">
                 <div class="container">
                     <div class="flexitem">
-                        
+
                         <div class="left">
                             <ul class="flexitem main-links">
-                                <li><a href="#">즐겨찾기</a></li>
+                                <li class="flexitem"><img src="/assets/icon/icons8-star-80.png"><a href="#">즐겨찾기</a>
+                                </li>
                                 <li><a href="#">새글</a></li>
                                 <li><a href="#">2024년 2월 25일</a></li>
                             </ul>
@@ -40,8 +42,9 @@
                         </div>
                         <div class="right">
                             <ul class="main-links">
-                            
-                                <li><a href="#">Enghish <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+
+                                <li><a href="#">Enghish <span class="icon-small"><i
+                                                class="ri-arrow-down-s-line"></i></span></a>
                                     <ul>
                                         <li class="current"><a href="#">English</a></li>
                                         <li><a href="#">German</a></li>
@@ -49,127 +52,177 @@
                                         <li><a href="#">Bahasa</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">로그인</a></li>
-                                <li><a href="#">가입하기</a></li>
+                                <li><button id="modalOpenButton">로그인 / 가입하기</button></li>
                             </ul>
                         </div>
 
                     </div>
                 </div>
             </div>
-        
+
             <div class="header-nav">
                 <div class="container">
                     <div class="flexitem">
 
                         <!-- <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a> -->
 
-                        <div class="logo"><a href="/"><span class="square"></span>NEXPARN</a></div>
+                        <div class="logo"><a href="/"><span class="square"></span>NEXPARAN</a></div>
                         <nav class="mobile-hide">
                             <ul class="flexitem second-links">
-                                <li><a href="index.html">홈</a></li>
+                                <li><a href="#">홈</a></li>
                                 <li><a href="#">포트폴리오</a></li>
                                 <li class="has-child">
-                                    <a href="#">커뮤니티
+                                    <a href="board_com_list.html">커뮤니티
                                         <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
                                     </a>
                                     <div class="mega">
                                         <div class="contain">
                                             <div class="wrapper">
+
                                                 <div class="flexcol">
                                                     <div class="row">
-                                                        <h4>sub title</h4>
                                                         <ul>
-                                                            <li><a href="#">menu</a></li>
-                                                            
+                                                            <li>
+                                                                <a href="./board_com_list.html"
+                                                                    target="#com-one-panel">자유게시판</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="flexcol">
                                                     <div class="row">
-                                                        <h4>sub title</h4>
                                                         <ul>
-                                                            <li><a href="#">menu</a></li>
-                                                            
+                                                            <li>
+                                                                <a href="./board_com_list.html"
+                                                                    target="#com-two-panel">일반홍보</a>
+                                                            </li>
+
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="flexcol">
                                                     <div class="row">
-                                                        <h4>sub title</h4>
                                                         <ul>
-                                                            <li><a href="#">menu</a></li>
-                                                            
+                                                            <li>
+                                                                <a href="./board_com_list.html"
+                                                                    target="#com-three-panel">유머&이슈</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="flexcol">
-                                                    <div class="row">
-                                                        <h4>sub title</h4>
-                                                        <ul>
-                                                            <li><a href="#">menu</a></li>
-                                                    
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                
-                                                
+
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="#">이벤트</a></li>
+                                <li><a href="board_notice.html">이벤트/포인트</a></li>
                                 <li>
                                     <a href="#">고객센터
                                         <div class="fly-item"><span>New</span></div>
-                                    </a></li>
+                                    </a>
+                                </li>
                             </ul>
-                                
+
                         </nav>
                         <div class="right">
                             <ul class="second-links">
                                 <li class="mobile-hide">
                                     <a href="#">
-                                        <div class="icon-large"><i class="fa-regular fa-heart"></i></div>
+                                        <div class="icon-large">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
                                         <div class="fly-item"><span class="item-number">0</span></div>
-                                    </a></li>
-                                <li class="iscart"><a href="#">
-                                    <div class="icon-large"><i class="fa-solid fa-bars"></i>
-                                        <div class="fly-item"><span class="item-number">4</span></div>
-                                    </div>
-                                    
-                                </a>
-                                
-                                <div class="mini-cart cart-trigger">
-                                    <div class="content">
-                                        <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                        <div class="cart-head">
-                                            <h4>리스트</h4>
-                                        </div>
-                                        <div class="cart-body">
-                                            <ul class="products mini">
-                                                <li class="item">
-                                                    타이틀 1
-                                                </li>
-                                                <li class="item">
-                                                    타이틀 1
-                                                </li>
-                                                <li class="item">
-                                                    타이틀 1
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    </a>
+                                </li>
+                                <li class="iscart">
 
-                                        <div class="cart-footer">
-                                            
-                                            <div class="actions">
-                                                <a href="#" class="primary-button">Checkout</a>
-                                                <a href="#" class="secondary-button">View Cart</a>
+                                    <div class="icon-large">
+                                        <input type="checkbox" id="icon-bars">
+                                        <label for="icon-bars">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </label>
+                                        <div class="fly-item"><span class="item-number">4</span></div>
+                                        <div class="mini-nav cart-trigger">
+                                            <div class="content">
+
+                                                <div class="cart-head">
+                                                    <h4>전체 메뉴</h4>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </div>
+                                                <div class="cart-box">
+                                                    <div class="row">불량신고</div>
+                                                    <div class="row">머니교환</div>
+                                                    <div class="row">출석체크</div>
+                                                </div>
+                                                <div class="cart-alim">
+                                                    알림창
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">NEXPARAN</div>
+                                                        <div class="row">
+                                                            <div class="c-home1">회사소개</div>
+                                                            <div class="c-home2">회사안내</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">포트폴리오</div>
+                                                        <div class="row">
+                                                            <div class="c-home1">관공서</div>
+                                                            <div class="c-home2">쇼핑몰</div>
+                                                            <div class="c-home2">병원</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">커뮤니티</div>
+                                                        <div class="row">
+                                                            <div class="c-home1">자유게시판</div>
+                                                            <div class="c-home2">일반홍보</div>
+                                                            <div class="c-home3">유머&이슈</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="c-home1">자유게시판</div>
+                                                            <div class="c-home2">일반홍보</div>
+                                                            <div class="c-home3">유머&이슈</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">포인트존</div>
+                                                        <div class="row">
+                                                            <div class="c-home1">이벤트</div>
+                                                            <div class="c-home2">출석체크</div>
+                                                            <div class="c-home3">포인트안내</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">고객센터</div>
+                                                        <div class="row">
+                                                            <div class="c-home1">공지사항</div>
+                                                            <div class="c-home2">1:1 문의</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-footer">
+
+
+                                                </div>
+
                                             </div>
                                         </div>
-
                                     </div>
-                                </div>
+
+                                </li>
+
 
                                 </li>
                             </ul>
@@ -179,17 +232,19 @@
             </div>
             <!-- header-nav-->
 
-            
+
         </header>
+
+
 
 
         <!-- Main content -->
         <div class="content">
-            
+
             <!-- Main content main-left  -->
             <div class="main-left">
                 <div class="log-in-state">
-            
+
                     <div class="state-wrap">
                         <div class="user-img">
                             <img src="./assets/icon/icons8-girl-64.png">
@@ -205,12 +260,12 @@
                         </div>
                     </div>
                     <div class="rating-info">
-                        
+
                         <div class="indicator-wrap">
                             <span class="text">경험치</span>
-                                <div class="indi-back">
-                                    <div class="indi-bar"></div>
-                                </div>
+                            <div class="indi-back">
+                                <div class="indi-bar"></div>
+                            </div>
                         </div>
                         <div class="info-wrap">
                             <div>
@@ -250,8 +305,8 @@
                         <i class="fa fa-caret-up"></i>
                         <i class="fa fa-caret-down"></i>
                     </div>
-                    
-                </div> 
+
+                </div>
 
                 <div class="board-event">
                     <div class="title">
@@ -282,14 +337,14 @@
                         <span class="sub-title">제목제목제목제목제목제목제</span>
                         <span class="sub-date">24.02.02.</span>
                     </div>
-                </div> 
+                </div>
 
-                    <!-- board-new tabs start-->
+                <!-- board-new tabs start-->
                 <div class="board-new">
                     <div class="new-tab-warpper">
                         <input class="new-radio" id="new-one" name="new-group" type="radio" checked>
                         <input class="new-radio" id="new-two" name="new-group" type="radio">
-                        
+
                         <div class="new-tabs">
                             <label class="new-tab" id="new-one-tab" for="new-one">새 글</label>
                             <label class="new-tab" id="new-two-tab" for="new-two">새 댓글</label>
@@ -338,9 +393,9 @@
                                     </div>
                                     <span class="board-date">24.02.02.</span>
                                 </div>
-                                
+
                             </div>
-                                
+
                             <div class="new-panel" id="new-two-panel">
                                 <div class="row">
                                     <span class="board-sort">[이벤트후기]</span>
@@ -386,15 +441,15 @@
                         </div>
 
                     </div>
-                </div> 
-                    <!-- board-new tabs end -->
+                </div>
+                <!-- board-new tabs end -->
 
-                    <!-- ranking tabs start-->
+                <!-- ranking tabs start-->
                 <div class="board-ranking">
                     <div class="ranking-tab-warpper">
                         <input class="ranking-radio" id="ranking-one" name="ranking-group" type="radio">
                         <input class="ranking-radio" id="ranking-two" name="ranking-group" type="radio" checked>
-                        
+
                         <div class="ranking-tabs">
                             <label class="ranking-tab" id="ranking-one-tab" for="ranking-one">포인트 랭킹</label>
                             <label class="ranking-tab" id="ranking-two-tab" for="ranking-two">머니 랭킹</label>
@@ -403,7 +458,7 @@
                         <div class="ranking-panels">
 
                             <div class="ranking-panel" id="ranking-one-panel">
-                                
+
                                 <div class="row">
                                     <div class="wrap">
                                         <img src="./assets/icon/icons8-medal-80-01.png">
@@ -460,11 +515,11 @@
                                     </div>
                                     <span class="total-count">LV.20</span>
                                 </div>
-                                
-                                
+
+
 
                             </div>
-                                
+
                             <div class="ranking-panel" id="ranking-two-panel">
                                 <div class="row">
                                     <div class="wrap">
@@ -501,7 +556,7 @@
                                     </div>
                                     <span class="total-count">100,000M</span>
                                 </div>
-                                
+
                                 <div class="row">
                                     <div class="wrap">
                                         <img src="./assets/icon/icons8-medal-80.png">
@@ -509,7 +564,7 @@
                                     </div>
                                     <span class="total-count">100,000M</span>
                                 </div>
-                                
+
                                 <div class="row">
                                     <div class="wrap">
                                         <img src="./assets/icon/icons8-medal-80.png">
@@ -517,7 +572,7 @@
                                     </div>
                                     <span class="total-count">100,000M</span>
                                 </div>
-                                
+
                                 <div class="row">
                                     <div class="wrap">
                                         <img src="./assets/icon/icons8-medal-80.png">
@@ -525,15 +580,15 @@
                                     </div>
                                     <span class="total-count">100,000M</span>
                                 </div>
-                                
-                                
-                                
+
+
+
                             </div>
                         </div>
 
                     </div>
-                </div> 
-                    <!-- ranking tabs end-->
+                </div>
+                <!-- ranking tabs end-->
 
             </div>
             <!-- Main content main-left  end-->
@@ -551,7 +606,7 @@
 
                         </div>
                     </div>
-                    
+
                 </div>
 
                 <div class="board-community">
@@ -561,7 +616,7 @@
                         <input class="com-radio" id="com-three" name="com-group" type="radio">
 
                         <div class="com-tabs-wrap">
-                            <div class="com-title">커뮤니티</div>
+                            <div class="com-t-title">커뮤니티</div>
 
                             <div class="com-tabs">
                                 <label class="com-tab" id="com-one-tab" for="com-one">자유게시판</label>
@@ -569,7 +624,7 @@
                                 <label class="com-tab" id="com-three-tab" for="com-three">유머&이슈</label>
                             </div>
                         </div>
-                        
+
 
                         <div class="com-panels">
                             <!-- panel one Promotion-board -->
@@ -586,7 +641,7 @@
                                                     <option value="b-name">글쓴이</option>
                                                 </select>
                                             </div>
-                                            
+
                                             <div class="select">
                                                 <select class="custom-select">
                                                     <option value="b-and">그리고</option>
@@ -601,13 +656,13 @@
                                     </div>
                                     <div class="boardlist-top-wrap">
                                         <div class="boardlist-total board-flex">
-                                            전체 <b> 115,222</b>  / 1 페이지
+                                            전체 <b> 115,222</b> / 1 페이지
                                         </div>
                                         <div class="text-right">
-                                            
+
                                             <a href="javascript:btn_sort()" class="btn_sort">
                                                 <i class="fa-solid fa-arrow-up-a-z"></i>
-                                                
+
                                             </a>
                                             <ul id="sort_list" style="display: none;">
                                                 <li>최신순</li>
@@ -618,12 +673,13 @@
                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                                 <span>검색</span>
                                             </a>
-                                            <button class="btn-write" type="button" onclick="location.href='board_com_write.html'">글쓰기</button>
+                                            <button class="btn-write" type="button"
+                                                onclick="location.href='board_com_write.html'">글쓰기</button>
                                         </div>
-                                        
-                                        
+
+
                                     </div>
-                                    
+
                                     <div class="boardlist-main">
                                         <table class="board-table">
                                             <thead>
@@ -637,18 +693,22 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="td-num"><div class=alim>알림</div></td>
+                                                    <td class="td-num">
+                                                        <div class=alim>알림</div>
+                                                    </td>
                                                     <td class="td-tit">
                                                         <a href="./board_com_read.html">
                                                             <img src="./assets/icon/icons8-sheriff-30.png">
-                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급 
-                                                            처리무무성의한 글 작성시 포인트 미지급 
-                                                            처리무미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급 처리무무성의한 글 작성시 포인트 미지급 처리무
-                                                        </span>
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                                처리무무성의한 글 작성시 포인트 미지급
+                                                                처리무미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급 처리무무성의한 글 작성시 포인트
+                                                                미지급 처리무
+                                                            </span>
                                                         </a>
-                                                        
+
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -659,50 +719,22 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="td-num"><div class=alim>알림</div></td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-sheriff-30.png">
-                                                        <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급 
-                                                            처리무무성의한 글 작성시 포인트 미지급 
-                                                            처리무미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급 처리무무성의한 글 작성시 포인트 미지급 처리무
-                                                        </span>
+                                                    <td class="td-num">
+                                                        <div class=alim>알림</div>
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
-                                                        <span>넥스파란 관리자</span>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-sheriff-30.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                                처리무무성의한 글 작성시 포인트 미지급
+                                                                처리무미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급 처리무무성의한 글 작성시 포인트
+                                                                미지급 처리무
+                                                            </span>
+                                                        </a>
+
                                                     </td>
-                                                    <td class="td-da">
-                                                        <span>24.02.15</span>
-                                                    </td>
-                                                    <td class="td-co">
-                                                        <span>98598</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급 
-                                                            처리무무성의한 글 작성시 포인트 미지급 
-                                                            처리무미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급 처리무무성의한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
-                                                    </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
-                                                        <span>넥스파란 관리자</span>
-                                                    </td>
-                                                    <td class="td-da">
-                                                        <span>24.02.15</span>
-                                                    </td>
-                                                    <td class="td-co">
-                                                        <span>98598</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
-                                                    </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -714,12 +746,19 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                                처리무무성의한 글 작성시 포인트 미지급
+                                                                처리무미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급 처리무무성의한 글 작성시 포인트
+                                                                미지급 처리무
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -731,12 +770,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -748,12 +791,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -765,12 +812,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -782,12 +833,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -799,12 +854,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -816,12 +875,16 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -833,12 +896,58 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="td-num">212121</td>
-                                                    <td class="td-tit"><img src="./assets/icon/icons8-new-100.png">
-                                                        <span>한 글 작성시 포인트 미지급 처리무
-                                                        </span>
-                                                        <div class="td-count">+25</div>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
                                                     </td>
-                                                    <td class="td-na"><img src="./assets/icon/icons8-popular-man-48.png">
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
+                                                        <span>넥스파란 관리자</span>
+                                                    </td>
+                                                    <td class="td-da">
+                                                        <span>24.02.15</span>
+                                                    </td>
+                                                    <td class="td-co">
+                                                        <span>98598</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td-num">212121</td>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
+                                                    </td>
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
+                                                        <span>넥스파란 관리자</span>
+                                                    </td>
+                                                    <td class="td-da">
+                                                        <span>24.02.15</span>
+                                                    </td>
+                                                    <td class="td-co">
+                                                        <span>98598</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="td-num">212121</td>
+                                                    <td class="td-tit">
+                                                        <a href="./board_com_read.html">
+                                                            <img src="./assets/icon/icons8-new-100.png">
+                                                            <span>미지급 처리무무성의한 글 작성시 포인트 미지급 처리무미지급
+                                                            </span>
+                                                            <div class="td-count">+25</div>
+                                                        </a>
+                                                    </td>
+                                                    <td class="td-na"><img
+                                                            src="./assets/icon/icons8-popular-man-48.png">
                                                         <span>넥스파란 관리자</span>
                                                     </td>
                                                     <td class="td-da">
@@ -850,9 +959,9 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                        
+
                                     </div>
-                                
+
 
                                     <!-- pagination -->
                                     <div class="bl-page">
@@ -878,8 +987,8 @@
 
 
                                 </form>
-                                
-                    
+
+
                             </div>
                             <!-- panel two -->
 
@@ -894,7 +1003,7 @@
                         </div>
 
                     </div>
-                </div> 
+                </div>
 
 
 
@@ -923,7 +1032,7 @@
 
 
             </div>
-            <!-- Main content main-right end-->            
+            <!-- Main content main-right end-->
         </div>
 
         <!-- Side bar -->
@@ -950,225 +1059,238 @@
         <aside class="side-r">
             <div class="agent">
                 <div class="box">
-                    <img src="./assets/banner/banner_right_120_600.png" width="120px" height="600px" class="img_120_600">
+                    <img src="./assets/banner/banner_right_120_600.png" width="120px" height="600px"
+                        class="img_120_600">
                     <img src="./assets/banner/banner_728_90.png" class="img_728_90">
 
                 </div>
-                
+
             </div>
         </aside>
 
-
         <!-- Footer -->
         <footer class="main-footer">
-            
-            <div class="footer-nav">
-            
-                <div class="container">
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Popular Categories</h2>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Fashion</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Electronic</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Cosmetic</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Health</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Watches</a>
-                        </li>
-            
-                    </ul>
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Products</h2>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Prices drop</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">New products</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Best sales</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Contact us</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Sitemap</a>
-                        </li>
-            
-                    </ul>
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Our Company</h2>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Delivery</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Legal Notice</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Terms and conditions</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">About us</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Secure payment</a>
-                        </li>
-            
-                    </ul>
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Services</h2>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Prices drop</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">New products</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Best sales</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Contact us</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Sitemap</a>
-                        </li>
-            
-                    </ul>
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Contact</h2>
-                        </li>
-            
-                        <li class="footer-nav-item flex">
-                            <div class="icon-box">
-                                <ion-icon name="location-outline"></ion-icon>
-                            </div>
-            
-                            <address class="content">
-                                OOO도 OOO시 OOOOOO OOOO 000호
-                            </address>
-                        </li>
-            
-                        <li class="footer-nav-item flex">
-                            <div class="icon-box">
-                                <ion-icon name="call-outline"></ion-icon>
-                            </div>
-            
-                            <a href="tel:000-000-0000" class="footer-nav-link">(000) 000-0000</a>
-                        </li>
-            
-                        <li class="footer-nav-item flex">
-                            <div class="icon-box">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </div>
-            
-                            <a href="mailto:example@gmail.com" class="footer-nav-link">help@gmail.com</a>
-                        </li>
-            
-                    </ul>
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title">Follow Us</h2>
-                        </li>
-            
-                        <li>
-                            <ul class="social-link">
-            
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-facebook"></ion-icon>
-                                    </a>
-                                </li>
-            
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-twitter"></ion-icon>
-                                    </a>
-                                </li>
-            
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                    </a>
-                                </li>
-            
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-instagram"></ion-icon>
-                                    </a>
-                                </li>
-            
-                            </ul>
-                        </li>
-            
-                    </ul>
-            
-                </div>
-            
-            </div>
-            
-            <div class="footer-bottom">
-            
-                <div class="container">
-            
-                    <img src="./assets/payment.png" alt="payment method" class="payment-img">
-            
-                    <p class="copyright">
-                        Copyright &copy; <a href="#">Nexparn</a> all rights reserved.
-                    </p>
-            
-                </div>
-            
-            </div>
 
+            <div class="footer-nav">
+
+                <div class="container">
+
+                    <ul class="footer-nav-list">
+
+                        <li class="footer-nav-item">
+                            <a href="#">
+                                <h2 class="nav-title">회사소개</h2>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-nav-list">
+
+                        <li class="footer-nav-item">
+                            <a href="#">
+                                <h2 class="nav-title">이용약관</h2>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-nav-list">
+
+                        <li class="footer-nav-item">
+                            <a href="#">
+                                <h2 class="nav-title f-small">개인정보처리방침</h2>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-nav-list">
+
+                        <li class="footer-nav-item">
+                            <a href="#">
+                                <h2 class="nav-title f-small">청소년보호방침</h2>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <ul class="footer-nav-list">
+
+                        <li class="footer-nav-item">
+                            <a href="#">
+                                <h2 class="nav-title">회사안내</h2>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <ul class="footer-nav-list">
+
+                        <li class="footer-nav-item">
+                            <a href="#">
+                                <h2 class="nav-title">임직원인증</h2>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <ul class="footer-nav-list">
+
+                        <li class="footer-nav-item">
+                            <h2 class="nav-title"></h2>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item f-icon">
+                            <a href="#">
+                                <h2 class="nav-title">판매자서비스</h2>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item f-icon">
+                            <a href="#">
+                                <h2 class="nav-title">파트너센터</h2>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="container-bottom">
+                <div class="f-left">
+                    <h3 class="footer-title">(주) 넥스파란</h3>
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                            <span>대표이사 : 전민수</span>
+                        </li>
+                        <li class="footer-title-item">
+                            <span>전라특별자치도 군산시 하나운로 48 00동 00호</span>
+                        </li>
+                        <li class="footer-title-item">
+                            <a href="#">
+                                <span>사업자등록번호 : 140-88-02018</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                            <span>E-mail : help@gmail.com</span>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                        </li>
+                    </ul>
+
+
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                            <p class="copyright">
+                                Copyright &copy; <a href="#">Nexparan</a> all rights reserved.
+                            </p>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-right">
+                    <h3 class="footer-title">고객센터</h3>
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                            <span>운영시간 : 평일 09:00 ~ 18:00</span>
+                        </li>
+                        <li class="footer-title-item">
+                            <a href="#">
+                                <span class="bold"><b>고객센터바로가기</b></span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+
+                        </li>
+                    </ul>
+                    <ul class="footer-title-list">
+                        <li>
+                            <div class="f-img">
+                                <img src="/assets/icon/qr.png">
+                                <div>
+                                    <span class="title">APP 다운로드</span>
+                                    <span class="text">스마트폰으로 QR코드 스켄</span>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
+
+
+        <!-- Modal -->
+        <div class="modal-body">
+
+            <div id="modalContainer" class="hidden">
+                <div id="modalContent">
+                    <button id="modalCloseButton"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="m-wrapper">
+                        <div class="m-container">
+                            <div class="sign-up-container">
+                                <form class="modal-form">
+                                    <h1>Sign up</h1>
+                                    <div class="social-links">
+                                        <div>
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- <span>이메일을 등록하여 가입해주세요.</span> -->
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Email">
+                                    <input type="password" placeholder="Password">
+                                    <button class="form_btn">가입하기</button>
+                                </form>
+                            </div>
+                            <div class="sign-in-container">
+                                <form class="sign-in modal-form">
+                                    <h1>Log In</h1>
+                                    <div class="social-links">
+                                        <div>
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- <span>or use your account</span> -->
+                                    <input type="email" placeholder="이메일을 입력해주세요.">
+                                    <input type="password" placeholder="비밀번호를 입력해주세요">
+                                    <button class="form_btn">로그인하기</button>
+                                </form>
+                            </div>
+                            <div class="overlay-container">
+                                <div class="overlay-left">
+                                    <h1>반갑습니다.</h1>
+                                    <p>귀하의 계정으로 로그인해주세요.</p>
+                                    <button id="signIn" class="overlay_btn">로그인하러가기</button>
+                                </div>
+                                <div class="overlay-right">
+                                    <h1>안녕하세요.</h1>
+                                    <p>귀하의 계정으로 가입해주세요</p>
+                                    <button id="signUp" class="overlay_btn">Sign up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- menu-bottom -->

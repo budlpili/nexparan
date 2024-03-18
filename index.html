@@ -25,7 +25,7 @@
                         
                         <div class="left">
                             <ul class="flexitem main-links">
-                                <li><a href="#">즐겨찾기</a></li>
+                                <li class="flexitem"><img src="/assets/icon/icons8-star-80.png"><a href="#">즐겨찾기</a></li>
                                 <li><a href="#">새글</a></li>
                                 <li><a href="#">2024년 2월 25일</a></li>
                             </ul>
@@ -49,8 +49,7 @@
                                         <li><a href="#">Bahasa</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">로그인</a></li>
-                                <li><a href="#">가입하기</a></li>
+                                <li><button id="modalOpenButton">로그인 / 가입하기</button></li>
                             </ul>
                         </div>
 
@@ -76,49 +75,41 @@
                                     <div class="mega">
                                         <div class="contain">
                                             <div class="wrapper">
-                                                <div class="flexcol">
-                                                    <div class="row">
-                                                        <h4>sub title</h4>
-                                                        <ul>
-                                                            <li><a href="#">menu</a></li>
-                                                            
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="flexcol">
-                                                    <div class="row">
-                                                        <h4>sub title</h4>
-                                                        <ul>
-                                                            <li><a href="#">menu</a></li>
-                                                            
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="flexcol">
-                                                    <div class="row">
-                                                        <h4>sub title</h4>
-                                                        <ul>
-                                                            <li><a href="#">menu</a></li>
-                                                            
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="flexcol">
-                                                    <div class="row">
-                                                        <h4>sub title</h4>
-                                                        <ul>
-                                                            <li><a href="#">menu</a></li>
-                                                    
-                                                        </ul>
-                                                    </div>
-                                                </div>
                                                 
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="./board_com_list.html" target="#com-one-panel">자유게시판</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="./board_com_list.html" target="#com-two-panel">일반홍보</a>
+                                                            </li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="./board_com_list.html" target="#com-three-panel">유머&이슈</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                                 
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="#">이벤트</a></li>
+                                <li><a href="board_notice.html">이벤트/포인트</a></li>
                                 <li>
                                     <a href="#">고객센터
                                         <div class="fly-item"><span>New</span></div>
@@ -130,46 +121,101 @@
                             <ul class="second-links">
                                 <li class="mobile-hide">
                                     <a href="#">
-                                        <div class="icon-large"><i class="fa-regular fa-heart"></i></div>
+                                        <div class="icon-large">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
                                         <div class="fly-item"><span class="item-number">0</span></div>
-                                    </a></li>
-                                <li class="iscart"><a href="#">
-                                    <div class="icon-large"><i class="fa-solid fa-bars"></i>
-                                        <div class="fly-item"><span class="item-number">4</span></div>
-                                    </div>
-                                    
-                                </a>
+                                    </a>
+                                </li>
+                                <li class="iscart">
                                 
-                                <div class="mini-cart cart-trigger">
-                                    <div class="content">
-                                        <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                        <div class="cart-head">
-                                            <h4>리스트</h4>
-                                        </div>
-                                        <div class="cart-body">
-                                            <ul class="products mini">
-                                                <li class="item">
-                                                    타이틀 1
-                                                </li>
-                                                <li class="item">
-                                                    타이틀 1
-                                                </li>
-                                                <li class="item">
-                                                    타이틀 1
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="cart-footer">
-                                            
-                                            <div class="actions">
-                                                <a href="#" class="primary-button">Checkout</a>
-                                                <a href="#" class="secondary-button">View Cart</a>
+                                    <div class="icon-large">
+                                        <input type="checkbox" id="icon-bars">
+                                        <label for="icon-bars">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </label>
+                                        <div class="fly-item"><span class="item-number">4</span></div>
+                                        <div class="mini-nav cart-trigger">
+                                            <div class="content">
+                                                
+                                                <div class="cart-head">
+                                                    <h4>전체 메뉴</h4>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </div>
+                                                <div class="cart-box">
+                                                    <div class="row">불량신고</div>
+                                                    <div class="row">머니교환</div>
+                                                    <div class="row">출석체크</div>
+                                                </div>
+                                                <div class="cart-alim">
+                                                    알림창
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">NEXPARAN</div>
+                                                            <div class="row">
+                                                                <div class="c-home1">회사소개</div>
+                                                                <div class="c-home2">회사안내</div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">포트폴리오</div>
+                                                            <div class="row">
+                                                                <div class="c-home1">관공서</div>
+                                                                <div class="c-home2">쇼핑몰</div>
+                                                                <div class="c-home2">병원</div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">커뮤니티</div>
+                                                            <div class="row">
+                                                                <div class="c-home1">자유게시판</div>
+                                                                <div class="c-home2">일반홍보</div>
+                                                                <div class="c-home3">유머&이슈</div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="c-home1">자유게시판</div>
+                                                                <div class="c-home2">일반홍보</div>
+                                                                <div class="c-home3">유머&이슈</div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">포인트존</div>
+                                                            <div class="row">
+                                                                <div class="c-home1">이벤트</div>
+                                                                <div class="c-home2">출석체크</div>
+                                                                <div class="c-home3">포인트안내</div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-body">
+                                                    <div class="colum">
+                                                        <div class="title">고객센터</div>
+                                                            <div class="row">
+                                                                <div class="c-home1">공지사항</div>
+                                                                <div class="c-home2">1:1 문의</div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-footer">
+                                    
+                                                    
+                                                </div>
+                                    
                                             </div>
                                         </div>
-
                                     </div>
-                                </div>
+                                    
+                                </li>
+                                
 
                                 </li>
                             </ul>
@@ -192,7 +238,7 @@
                     <h3>Log-in</h3>
                     <div class="form">
                         <div class="input-wrap">
-                            <input id="log-id" type="text" class="login-user" placeholder="아이디를 입력하세요">
+                            <input id="log-id" type="text" class="login-user" placeholder="이메일을 입력하세요">
                             <input id="log-pwd" type="password" class="login-pass" placeholder="비밀번호를 입력하세요">
                         </div>
                         <div class="button-wrap">
@@ -223,9 +269,9 @@
 
                 <div class="board-content">
                     <div class="btn"><i class="fa-solid fa-volume-high"></i><span>공지</span></div>
-                    <input class="swiper" type="text" placeholder="최근 공지사항 Swiper">
+                    <input class="b-swiper" type="text" placeholder="최근 공지사항 Swiper">
 
-                    <div class="swiper icon">
+                    <div class="b-swiper icon">
                         <i class="fa fa-caret-up"></i>
                         <i class="fa fa-caret-down"></i>
                     </div>
@@ -286,8 +332,8 @@
                                     <span class="board-date">24.02.02.</span>
                                 </div>
                                 <div class="row">
+                                    <span class="board-sort">[이용후기]</span>
                                     <div class="wrap">
-                                        <span class="board-sort">[이용후기]</span>
                                         <span class="board-title">제목제목제목제목제목제목제목제목</span>
                                         <span class="comment-count">+2</span>
                                     </div>
@@ -561,8 +607,10 @@
                             <span class="h1">넥스파란</span> <span class="h2">공식보증업체</span>
                         </div>
                     <img src="./assets/icon/icons8-butterfly-96.png" alt="title-logo" width="48px" height="48px">
-
-
+                    
+                </div>
+                <div class="title-large-span">
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nisi tempora</span>
                 </div>
 
                 <div class="main-ad">
@@ -711,19 +759,19 @@
         <aside class="side-l">
             <div class="agent">
                 <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_01.png" width="125px" height="125px">
+                    <img src="./assets/banner/banner_small_125_125_01.png">
                 </div>
                 <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_02.png" width="125px" height="125px">
+                    <img src="./assets/banner/banner_small_125_125_02.png">
                 </div>
                 <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_03.png" width="125px" height="125px">
+                    <img src="./assets/banner/banner_small_125_125_03.png">
                 </div>
                 <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_04.png" width="125px" height="125px">
+                    <img src="./assets/banner/banner_small_125_125_04.png">
                 </div>
                 <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_05.png" width="125px" height="125px">
+                    <img src="./assets/banner/banner_small_125_125_05.png">
                 </div>
             </div>
         </aside>
@@ -750,206 +798,219 @@
                     <ul class="footer-nav-list">
             
                         <li class="footer-nav-item">
-                            <h2 class="nav-title">Popular Categories</h2>
+                            <a href="#">
+                                <h2 class="nav-title">회사소개</h2>
+                            </a>
                         </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Fashion</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Electronic</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Cosmetic</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Health</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Watches</a>
-                        </li>
-            
                     </ul>
             
                     <ul class="footer-nav-list">
             
                         <li class="footer-nav-item">
-                            <h2 class="nav-title">Products</h2>
+                            <a href="#">
+                                <h2 class="nav-title">이용약관</h2>
+                            </a>
                         </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Prices drop</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">New products</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Best sales</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Contact us</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Sitemap</a>
-                        </li>
-            
                     </ul>
             
                     <ul class="footer-nav-list">
             
                         <li class="footer-nav-item">
-                            <h2 class="nav-title">Our Company</h2>
+                            <a href="#">
+                                <h2 class="nav-title f-small">개인정보처리방침</h2>
+                            </a>
                         </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Delivery</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Legal Notice</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Terms and conditions</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">About us</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Secure payment</a>
-                        </li>
-            
                     </ul>
             
                     <ul class="footer-nav-list">
             
                         <li class="footer-nav-item">
-                            <h2 class="nav-title">Services</h2>
+                            <a href="#">
+                                <h2 class="nav-title f-small">청소년보호방침</h2>
+                            </a>
+                            
                         </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Prices drop</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">New products</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Best sales</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Contact us</a>
-                        </li>
-            
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">Sitemap</a>
-                        </li>
-            
                     </ul>
-            
                     <ul class="footer-nav-list">
             
                         <li class="footer-nav-item">
-                            <h2 class="nav-title">Contact</h2>
+                            <a href="#">
+                                <h2 class="nav-title">회사안내</h2>
+                            </a>
+                            
                         </li>
-            
-                        <li class="footer-nav-item flex">
-                            <div class="icon-box">
-                                <ion-icon name="location-outline"></ion-icon>
-                            </div>
-            
-                            <address class="content">
-                                OOO도 OOO시 OOOOOO OOOO 000호
-                            </address>
-                        </li>
-            
-                        <li class="footer-nav-item flex">
-                            <div class="icon-box">
-                                <ion-icon name="call-outline"></ion-icon>
-                            </div>
-            
-                            <a href="tel:000-000-0000" class="footer-nav-link">(000) 000-0000</a>
-                        </li>
-            
-                        <li class="footer-nav-item flex">
-                            <div class="icon-box">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </div>
-            
-                            <a href="mailto:example@gmail.com" class="footer-nav-link">help@gmail.com</a>
-                        </li>
-            
                     </ul>
-            
                     <ul class="footer-nav-list">
             
                         <li class="footer-nav-item">
-                            <h2 class="nav-title">Follow Us</h2>
+                            <a href="#">
+                                <h2 class="nav-title">임직원인증</h2>
+                            </a>
+                            
                         </li>
-            
-                        <li>
-                            <ul class="social-link">
-            
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-facebook"></ion-icon>
-                                    </a>
-                                </li>
-            
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-twitter"></ion-icon>
-                                    </a>
-                                </li>
-            
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                    </a>
-                                </li>
-            
-                                <li class="footer-nav-item">
-                                    <a href="#" class="footer-nav-link">
-                                        <ion-icon name="logo-instagram"></ion-icon>
-                                    </a>
-                                </li>
-            
-                            </ul>
-                        </li>
-            
                     </ul>
+                    <ul class="footer-nav-list">
             
+                        <li class="footer-nav-item">
+                            <h2 class="nav-title"></h2>
+                        </li>
+                    </ul>
                 </div>
-            
-            </div>
-            
-            <div class="footer-bottom">
-            
                 <div class="container">
-            
-                    <img src="./assets/payment.png" alt="payment method" class="payment-img">
-            
-                    <p class="copyright">
-                        Copyright &copy; <a href="#">Nexparan</a> all rights reserved.
-                    </p>
-            
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item f-icon">
+                            <a href="#">
+                                <h2 class="nav-title">판매자서비스</h2>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item f-icon">
+                            <a href="#">
+                                <h2 class="nav-title">파트너센터</h2>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            
+                        </li>
+                    </ul>
                 </div>
             
             </div>
+            <div class="container-bottom">
+                <div class="f-left">
+                    <h3 class="footer-title">(주) 넥스파란</h3>
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                            <span>대표이사 : 전민수</span>
+                        </li>
+                        <li class="footer-title-item">
+                            <span>전라특별자치도 군산시 하나운로 48 00동 00호</span>
+                        </li>
+                        <li class="footer-title-item">
+                            <a href="#">
+                                <span>사업자등록번호 : 140-88-02018</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                            <span>E-mail : help@gmail.com</span>
+                        </li>
+                    </ul>
 
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                        </li>
+                    </ul>
+                    
+
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                            <p class="copyright">
+                                Copyright &copy; <a href="#">Nexparan</a> all rights reserved.
+                            </p>
+                    
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-right">
+                    <h3 class="footer-title">고객센터</h3>
+                    <ul class="footer-title-list">
+                        <li class="footer-title-item">
+                            <span>운영시간 : 평일 09:00 ~ 18:00</span>
+                        </li>
+                        <li class="footer-title-item">
+                            <a href="#">
+                                <span class="bold"><b>고객센터바로가기</b></span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                            
+                        </li>
+                    </ul>
+                    <ul class="footer-title-list">
+                        <li>
+                            <div class="f-img">
+                                <img src="/assets/icon/qr.png">
+                                <div>
+                                    <span class="title">APP 다운로드</span>
+                                    <span class="text">스마트폰으로 QR코드 스켄</span>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
+
+
+        <!-- Modal -->
+        <div class="modal-body">
+        
+            <div id="modalContainer" class="hidden">
+                <div id="modalContent">
+                    <button id="modalCloseButton"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="m-wrapper">
+                        <div class="m-container">
+                            <div class="sign-up-container">
+                                <form class="modal-form">
+                                    <h1>Sign up</h1>
+                                    <div class="social-links">
+                                        <div>
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- <span>이메일을 등록하여 가입해주세요.</span> -->
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Email">
+                                    <input type="password" placeholder="Password">
+                                    <button class="form_btn">가입하기</button>
+                                </form>
+                            </div>
+                            <div class="sign-in-container">
+                                <form class="sign-in modal-form">
+                                    <h1>Log In</h1>
+                                    <div class="social-links">
+                                        <div>
+                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- <span>or use your account</span> -->
+                                    <input type="email" placeholder="이메일을 입력해주세요.">
+                                    <input type="password" placeholder="비밀번호를 입력해주세요">
+                                    <button class="form_btn">로그인하기</button>
+                                </form>
+                            </div>
+                            <div class="overlay-container">
+                                <div class="overlay-left">
+                                    <h1>반갑습니다.</h1>
+                                    <p>귀하의 계정으로 로그인해주세요.</p>
+                                    <button id="signIn" class="overlay_btn">로그인하러가기</button>
+                                </div>
+                                <div class="overlay-right">
+                                    <h1>안녕하세요.</h1>
+                                    <p>귀하의 계정으로 가입해주세요</p>
+                                    <button id="signUp" class="overlay_btn">Sign up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- menu-bottom -->
@@ -990,9 +1051,6 @@
                 </li>
             </ul>
         </div>
-
-
-
     </div>
 
 

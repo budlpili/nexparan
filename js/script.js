@@ -1,24 +1,24 @@
 
-//show cart on click
-const divtoShow = '.mini-cart';
-const divPopup = document.querySelector(divtoShow);
-const divTrigger = document.querySelector('.cart-trigger');
+// //show cart on click
+// const divtoShow = '.mini-cart';
+// const divPopup = document.querySelector(divtoShow);
+// const divTrigger = document.querySelector('.cart-trigger');
 
-divTrigger.addEventListener('click', () => {
-    setTimeout(() => {
-        if(!divPopup.classList.contains('show')) {
-            divPopup.classList.add('show');
-        }
-    }, 250 )
-})
+// divTrigger.addEventListener('click', () => {
+//     setTimeout(() => {
+//         if(!divPopup.classList.contains('show')) {
+//             divPopup.classList.add('show');
+//         }
+//     }, 250 )
+// })
 
-//close by click outside
-document.addEventListener('click', (e) => {
-    const isClosest = e.target.closest(divtoShow);
-    if(!isClosest && divPopup.classList.contains('show')) {
-        divPopup.classList.remove('show')
-    }
-} )
+// //close by click outside
+// document.addEventListener('click', (e) => {
+//     const isClosest = e.target.closest(divtoShow);
+//     if(!isClosest && divPopup.classList.contains('show')) {
+//         divPopup.classList.remove('show')
+//     }
+// } )
 
 
 //scroll event nav-top
@@ -57,22 +57,29 @@ function btn_sort(){
 
 
 
+// signup signin
+const signUpBtn = document.getElementById("signUp");
+const signInBtn = document.getElementById("signIn");
+const container = document.querySelector(".m-container");
 
-//Slider
-// const slider = document.querySelector('.list-slider');
-// const prevBtn = document.querySelector('.prev-btn');
-// const nextBtn = document.querySelector('.next-btn');
-// const cardWidth = document.querySelector('.card-s').offsetWidth;
-// let counter = 0;
+signUpBtn.addEventListener("click", () => {
+    container.classList.add("right-panel-active");
+});
+signInBtn.addEventListener("click", () => {
+    container.classList.remove("right-panel-active");
+});
 
-// nextBtn.addEventListener('click', () => {
-//     if (counter >= slider.children.length - 1) return;
-//     counter++;
-//     slider.style.transform = `translateX(${-cardWidth * counter}px)`;
-// });
 
-// prevBtn.addEventListener('click', () => {
-//     if (counter <= 0) return;
-//     counter--;
-//     slider.style.transform = `translateX(${-cardWidth * counter}px)`;
-// });
+
+// Modal
+const modalOpenButton = document.getElementById('modalOpenButton');
+const modalCloseButton = document.getElementById('modalCloseButton');
+const modal = document.getElementById('modalContainer');
+
+modalOpenButton.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+});
+
+modalCloseButton.addEventListener('click', () => {
+    modal.classList.add('hidden');
+});
