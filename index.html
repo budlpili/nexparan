@@ -1,1066 +1,640 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+<title>NEXPARAN</title>
 
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./assets/icon/3d-fluency-apple.png"></link>
-    <title>NEXPARN HOMPAGE</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+<link rel="icon" href="./Project_02/assets/icon/icons8-butterfly-96.png">
+<link rel="stylesheet" href="/Project_02/css/styles.css">
+
 </head>
-
 <body> 
 
-    <div class="wrapper">
-        <!-- Header -->
-        <header class="main-head">
-            <!-- Header-top -->
-            <div class="header-top mobile-hide header-up">
-                <div class="container">
-                    <div class="flexitem">
-                        
-                        <div class="left">
-                            <ul class="flexitem main-links">
-                                <li class="flexitem"><img src="/assets/icon/icons8-star-80.png"><a href="#">즐겨찾기</a></li>
-                                <li><a href="#">새글</a></li>
-                                <li><a href="#">2024년 2월 25일</a></li>
-                            </ul>
-                        </div>
-                        <div class="center">
-                            <div class="search_box">
-                                <div class="btn btn_common">
-                                    <i class="fas fa-search"></i>
-                                </div>
-                                <input type="text" class="input" placeholder="검색어를 입력해주세요">
-                            </div>
-                        </div>
-                        <div class="right">
-                            <ul class="main-links">
-                            
-                                <li><a href="#">Enghish <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
-                                    <ul>
-                                        <li class="current"><a href="#">English</a></li>
-                                        <li><a href="#">German</a></li>
-                                        <li><a href="#">Spanish</a></li>
-                                        <li><a href="#">Bahasa</a></li>
-                                    </ul>
-                                </li>
-                                <li><button id="modalOpenButton">로그인 / 가입하기</button></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        
-            <div class="header-nav">
-                <div class="container">
-                    <div class="flexitem">
-
-                        <!-- <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a> -->
-
-                        <div class="logo"><a href="/"><span class="square"></span>NEXPARAN</a></div>
-                        <nav class="mobile-hide">
-                            <ul class="flexitem second-links">
-                                <li><a href="#">홈</a></li>
-                                <li><a href="#">포트폴리오</a></li>
-                                <li class="has-child">
-                                    <a href="board_com_list.html">커뮤니티
-                                        <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
-                                    </a>
-                                    <div class="mega">
-                                        <div class="contain">
-                                            <div class="wrapper">
-                                                
-                                                <div class="flexcol">
-                                                    <div class="row">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="./board_com_list.html" target="#com-one-panel">자유게시판</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="flexcol">
-                                                    <div class="row">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="./board_com_list.html" target="#com-two-panel">일반홍보</a>
-                                                            </li>
-                                                            
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="flexcol">
-                                                    <div class="row">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="./board_com_list.html" target="#com-three-panel">유머&이슈</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><a href="board_notice.html">이벤트/포인트</a></li>
-                                <li>
-                                    <a href="#">고객센터
-                                        <div class="fly-item"><span>New</span></div>
-                                    </a></li>
-                            </ul>
-                                
-                        </nav>
-                        <div class="right">
-                            <ul class="second-links">
-                                <li class="mobile-hide">
-                                    <a href="#">
-                                        <div class="icon-large">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <div class="fly-item"><span class="item-number">0</span></div>
-                                    </a>
-                                </li>
-                                <li class="iscart">
-                                
-                                    <div class="icon-large">
-                                        <input type="checkbox" id="icon-bars">
-                                        <label for="icon-bars">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </label>
-                                        <div class="fly-item"><span class="item-number">4</span></div>
-                                        <div class="mini-nav cart-trigger">
-                                            <div class="content">
-                                                
-                                                <div class="cart-head">
-                                                    <h4>전체 메뉴</h4>
-                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
-                                                </div>
-                                                <div class="cart-box">
-                                                    <div class="row">불량신고</div>
-                                                    <div class="row">머니교환</div>
-                                                    <div class="row">출석체크</div>
-                                                </div>
-                                                <div class="cart-alim">
-                                                    알림창
-                                                </div>
-                                                <div class="cart-body">
-                                                    <div class="colum">
-                                                        <div class="title">NEXPARAN</div>
-                                                            <div class="row">
-                                                                <div class="c-home1">회사소개</div>
-                                                                <div class="c-home2">회사안내</div>
-                                                            </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cart-body">
-                                                    <div class="colum">
-                                                        <div class="title">포트폴리오</div>
-                                                            <div class="row">
-                                                                <div class="c-home1">관공서</div>
-                                                                <div class="c-home2">쇼핑몰</div>
-                                                                <div class="c-home2">병원</div>
-                                                            </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cart-body">
-                                                    <div class="colum">
-                                                        <div class="title">커뮤니티</div>
-                                                            <div class="row">
-                                                                <div class="c-home1">자유게시판</div>
-                                                                <div class="c-home2">일반홍보</div>
-                                                                <div class="c-home3">유머&이슈</div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="c-home1">자유게시판</div>
-                                                                <div class="c-home2">일반홍보</div>
-                                                                <div class="c-home3">유머&이슈</div>
-                                                            </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cart-body">
-                                                    <div class="colum">
-                                                        <div class="title">포인트존</div>
-                                                            <div class="row">
-                                                                <div class="c-home1">이벤트</div>
-                                                                <div class="c-home2">출석체크</div>
-                                                                <div class="c-home3">포인트안내</div>
-                                                            </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cart-body">
-                                                    <div class="colum">
-                                                        <div class="title">고객센터</div>
-                                                            <div class="row">
-                                                                <div class="c-home1">공지사항</div>
-                                                                <div class="c-home2">1:1 문의</div>
-                                                            </div>
-                                                    </div>
-                                                </div>
-                                                <div class="cart-footer">
-                                    
-                                                    
-                                                </div>
-                                    
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </li>
-                                
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- header-nav-->
-
-            
-        </header>
-
-
-        <!-- Main content -->
-        <div class="content">
-            
-            <!-- Main content main-left  -->
-            <div class="main-left">
-                <div class="log-in">
-                    <h3>Log-in</h3>
-                    <div class="form">
-                        <div class="input-wrap">
-                            <input id="log-id" type="text" class="login-user" placeholder="이메일을 입력하세요">
-                            <input id="log-pwd" type="password" class="login-pass" placeholder="비밀번호를 입력하세요">
-                        </div>
-                        <div class="button-wrap">
-                            <button class="submit"><span class="entypo-lock"><i class="fa fa-lock"></i></span></button>
-                        </div>
-                    </div>
-                    <div class="log-sub-bt">
-                        <div class="toggl-bt">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                        
-                        <span class="auto">자동로그인</span>
-
-                        <div class="text">
-                            <button class="log-join"><a href="#">가입하기</a></button>
-                            <button class="log-forgot"><a href="#">회원정보</a></button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="small-banner">
-                    알림창
-                </div>
-
-                <div class="board-content">
-                    <div class="btn"><i class="fa-solid fa-volume-high"></i><span>공지</span></div>
-                    <input class="b-swiper" type="text" placeholder="최근 공지사항 Swiper">
-
-                    <div class="b-swiper icon">
-                        <i class="fa fa-caret-up"></i>
-                        <i class="fa fa-caret-down"></i>
+    
+    <!-- header -->
+    <header>
+        <!-- Navigation -->
+        <nav class="nav-t-wrap">
+            <div class="nav-t-container">
+                <div class="nav-t-left">
+                    <div class="logo">
+                        <img src="./Project_02/assets/icon/icons8-butterfly-96.png">
+                        <div class="logo-title"><a href="#section_01">NexParan</a></div>
                     </div>
                     
-                </div> 
-
-                <div class="board-event">
-                    <div class="title">
-                        <span>이벤트 게시판</span>
-                    </div>
-                    <div class="row">
-                        <span class="sub-sort">이벤트</span>
-                        <span class="sub-title">제목제목제목제목제목제목제</span>
-                        <span class="sub-date">24.02.02.</span>
-                    </div>
-                    <div class="row">
-                        <span class="sub-sort">이벤트</span>
-                        <span class="sub-title">제목제목제목제목제목제목제</span>
-                        <span class="sub-date">24.02.02.</span>
-                    </div>
-                    <div class="row">
-                        <span class="sub-sort">이벤트</span>
-                        <span class="sub-title">제목제목제목제목제목제목제</span>
-                        <span class="sub-date">24.02.02.</span>
-                    </div>
-                    <div class="row">
-                        <span class="sub-sort">이벤트</span>
-                        <span class="sub-title">제목제목제목제목제목제목제</span>
-                        <span class="sub-date">24.02.02.</span>
-                    </div>
-                    <div class="row">
-                        <span class="sub-sort">이벤트</span>
-                        <span class="sub-title">제목제목제목제목제목제목제</span>
-                        <span class="sub-date">24.02.02.</span>
-                    </div>
-                </div> 
-
-                    <!-- board-new tabs start-->
-                <div class="board-new">
-                    <div class="new-tab-warpper">
-                        <input class="new-radio" id="new-one" name="new-group" type="radio" checked>
-                        <input class="new-radio" id="new-two" name="new-group" type="radio">
-                        
-                        <div class="new-tabs">
-                            <label class="new-tab" id="new-one-tab" for="new-one">새 글</label>
-                            <label class="new-tab" id="new-two-tab" for="new-two">새 댓글</label>
-                        </div>
-
-                        <div class="new-panels">
-
-                            <div class="new-panel" id="new-one-panel">
-                                <div class="row">
-                                    <span class="board-sort">[이용후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+25</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
+                    <!-- <form action="" method="POST">
+                        <div class="search-mode">
+                            <input id="nav-search" type="text" placeholder="검색어를 입력해주세요">
+                            <div class="icon">
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
-                                <div class="row">
-                                    <span class="board-sort">[이용후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+2</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
-                                </div>
-                                <div class="row">
-                                    <span class="board-sort">[이용후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+25</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
-                                </div>
-                                <div class="row">
-                                    <span class="board-sort">[이용후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+20</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
-                                </div>
-                                <div class="row">
-                                    <span class="board-sort">[이용후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+25</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
-                                </div>
-                                
-                            </div>
-                                
-                            <div class="new-panel" id="new-two-panel">
-                                <div class="row">
-                                    <span class="board-sort">[이벤트후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+25</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
-                                </div>
-                                <div class="row">
-                                    <span class="board-sort">[이벤트후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+25</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
-                                </div>
-                                <div class="row">
-                                    <span class="board-sort">[이벤트후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+25</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
-                                </div>
-                                <div class="row">
-                                    <span class="board-sort">[이벤트후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+25</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
-                                </div>
-                                <div class="row">
-                                    <span class="board-sort">[이벤트후기]</span>
-                                    <div class="wrap">
-                                        <span class="board-title">제목제목제목제목제목제목제목제목</span>
-                                        <span class="comment-count">+25</span>
-                                    </div>
-                                    <span class="board-date">24.02.02.</span>
+                                <div class="plus-option">
+                                    <i class="fa-regular fa-keyboard"></i>
+                                    <i class="fa-solid fa-microphone-lines"></i>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                </div> 
-                    <!-- board-new tabs end -->
-
-                    <!-- ranking tabs start-->
-                <div class="board-ranking">
-                    <div class="ranking-tab-warpper">
-                        <input class="ranking-radio" id="ranking-one" name="ranking-group" type="radio">
-                        <input class="ranking-radio" id="ranking-two" name="ranking-group" type="radio" checked>
-                        
-                        <div class="ranking-tabs">
-                            <label class="ranking-tab" id="ranking-one-tab" for="ranking-one">포인트 랭킹</label>
-                            <label class="ranking-tab" id="ranking-two-tab" for="ranking-two">머니 랭킹</label>
-                        </div>
-
-                        <div class="ranking-panels">
-
-                            <div class="ranking-panel" id="ranking-one-panel">
-                                
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80-01.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">LV.20</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80-02.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">LV.20</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80-03.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">LV.20</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">LV.20</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">LV.20</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">LV.20</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">LV.20</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">LV.20</span>
-                                </div>
-                                
-                                
-
-                            </div>
-                                
-                            <div class="ranking-panel" id="ranking-two-panel">
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80-01.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">100,000M</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80-02.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">100,000M</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80-03.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">100,000M</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">100,000M</span>
-                                </div>
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">100,000M</span>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">100,000M</span>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">100,000M</span>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="wrap">
-                                        <img src="./assets/icon/icons8-medal-80.png">
-                                        <span class="nick-name">너는 내운명</span>
-                                    </div>
-                                    <span class="total-count">100,000M</span>
-                                </div>
-                                
-                                
-                                
+                            <div class="item-xmark">
+                                <i class="fa-solid fa-xmark"></i>
                             </div>
                         </div>
-
-                    </div>
-                </div> 
-                    <!-- ranking tabs end-->
-
-            </div>
-            <!-- Main content main-left  end-->
-
-            <!-- Main content main-right  start-->
-            <div class="main-right">
-
-                <div class="main-top banner">
-                    <img src="assets/banner/bg-2(900_300).png" alt="메인 위 베너">
-                    <div class="span-wrap">
-                        <div class="title-t">Lorem ipsum dolor sit amet </div>
-                        <div class="title-m">NEXPARAN</div>
-                        <div class="title-b">Lorem ipsum dolor sit amet dolor sit amet</div>
-                    </div>
-                </div>
-
-                <div class="main-title box">
-
-                    <div class="box-item">
-                        <div class="wrap">
-                            <img src="./assets/icon/icons8-siren-100.png">
-                            <span class="title">불량신고</span>
-                        </div>
-                        <span class="sub">불량신고 및 불량사이트를 확인하세요</span>
-                    </div>
-                    <div class="box-item">
-                        <div class="wrap">
-                            <img src="./assets/icon/icons8-money-96.png">
-                            <span class="title">머니교환</span>
-                        </div>
-                        <span class="sub">포인트를 현금으로 교환하세요</span>
-                    </div>
-                    <div class="box-item">
-                        <div class="wrap">
-                            <img src="./assets/icon/icons8-calendar-94.png">
-                            <span class="title">출석체크</span>
-                        </div>
-                        <span class="sub">출석체크하고 포인트를 받으세요</span>
-                    </div>
-                    
-                </div>
-
-                <div class="title-large">
-                    <img src="./assets/icon/icons8-butterfly-96.png" alt="title-logo" width="48px" height="48px">
-                        <div class="text">
-                            <span class="h1">넥스파란</span> <span class="h2">공식보증업체</span>
-                        </div>
-                    <img src="./assets/icon/icons8-butterfly-96.png" alt="title-logo" width="48px" height="48px">
-                    
-                </div>
-                <div class="title-large-span">
-                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nisi tempora</span>
-                </div>
-
-                <div class="main-ad">
-                    <div class="ad-wrap row">
-                        <div class="ad-01">
-                            <img src="/assets/banner/banner_middle_01.png">
-                        </div>
-                        <div class="ad-02">
-                            <img src="/assets/banner/banner_middle_02.png">
-                        </div>
-                    </div>
-                    <div class="ad-wrap row">
-                        <div class="ad-03">
-                            <img src="/assets/banner/banner_middle_03.png">
-                        </div>
-                        <div class="ad-04">
-                            <img src="/assets/banner/banner_middle_04.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="board-total page">
-
-                    <!-- board tabs -->
-                    <div class="tab-warpper">
-                        <input class="radio" id="one" name="group" type="radio" checked>
-                        <input class="radio" id="two" name="group" type="radio">
-                        <input class="radio" id="three" name="group" type="radio">
-                        
-                        <div class="tabs">
-                            <label class="tab" id="one-tab" for="one">일반홍보</label>
-                            <label class="tab" id="two-tab" for="two">유머&이슈</label>
-                            <label class="tab" id="three-tab" for="three">자유게시판</label>
-                        </div>
-                        <div class="panels">
-                            
-                            <div class="panel" id="one-panel">
-                                <div class="panel-content">
-                                    <div class="col">
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="col">
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        <div class="row">
-                                            <span class="sort">[구분]</span>
-                                            <span class="b-title">제목제목제목제목제목제목제목제목</span>
-                                            <span class="date">24.02.02.</span>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                
-
-                            </div>
-                            <div class="panel" id="two-panel">
-                                <div class="panel-title">Take-Away Skills</div>
-                                <p>You will learn many aspects of styling web pages! You’ll be able to set up the correct file structure,
-                                    edit text and colors, and create attractive layouts. With these skills, you’ll be able to customize the
-                                    appearance of your web pages to suit your every need!</p>
-                            </div>
-                            <div class="panel" id="three-panel">
-                                <div class="panel-title">Note on Prerequisites</div>
-                                <p>We recommend that you complete Learn HTML before learning CSS.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- board tabs end -->
-                </div>
-
-                <div class="main-list-slide">
-                    <div class="list-slide-head">
-                        <div class="title">포트폴리오</div>
-                        <div class="more-btn">More<i class="fa-solid fa-arrow-right"></i></div>
-                    </div>
-                    <div class="slider-container">
-                        <div class="list-slider">
-                            <div class="card-s">
-                                <img class="slide-img" src="./assets/banner/banner_small_125_125_01.png">
-                                <!-- <div class="sub-title">반응형을 이용한 홈페이지를 제작하여 회사의 발전에 기여한다.</div> -->
-                            </div>
-                            <div class="card-s">
-                                <img class="slide-img" src="./assets/banner/banner_small_125_125_02.png">
-                            </div>
-                            <div class="card-s">
-                                <img class="slide-img" src="./assets/banner/banner_small_125_125_03.png">
-                            </div>
-                            <div class="card-s">
-                                <img class="slide-img" src="./assets/banner/banner_small_125_125_04.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            <!-- Main content main-right end-->            
-        </div>
-
-        <!-- Side bar -->
-        <aside class="side-l">
-            <div class="agent">
-                <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_01.png">
-                </div>
-                <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_02.png">
-                </div>
-                <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_03.png">
-                </div>
-                <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_04.png">
-                </div>
-                <div class="box">
-                    <img src="./assets/banner/banner_small_125_125_05.png">
-                </div>
-            </div>
-        </aside>
-
-        <aside class="side-r">
-            <div class="agent">
-                <div class="box">
-                    <img src="./assets/banner/banner_right_120_600.png" width="120px" height="600px" class="img_120_600">
-                    <img src="./assets/banner/banner_728_90.png" class="img_728_90">
+                    </form> -->
 
                 </div>
                 
-            </div>
-        </aside>
+                <div class="nav-t-right ul_li">
 
-
-        <!-- Footer -->
-        <footer class="main-footer">
-            
-            <div class="footer-nav">
-            
-                <div class="container">
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <a href="#">
-                                <h2 class="nav-title">회사소개</h2>
-                            </a>
-                        </li>
-                    </ul>
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <a href="#">
-                                <h2 class="nav-title">이용약관</h2>
-                            </a>
-                        </li>
-                    </ul>
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <a href="#">
-                                <h2 class="nav-title f-small">개인정보처리방침</h2>
-                            </a>
-                        </li>
-                    </ul>
-            
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <a href="#">
-                                <h2 class="nav-title f-small">청소년보호방침</h2>
-                            </a>
-                            
-                        </li>
-                    </ul>
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <a href="#">
-                                <h2 class="nav-title">회사안내</h2>
-                            </a>
-                            
-                        </li>
-                    </ul>
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <a href="#">
-                                <h2 class="nav-title">임직원인증</h2>
-                            </a>
-                            
-                        </li>
-                    </ul>
-                    <ul class="footer-nav-list">
-            
-                        <li class="footer-nav-item">
-                            <h2 class="nav-title"></h2>
-                        </li>
-                    </ul>
-                </div>
-                <div class="container">
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-item f-icon">
-                            <a href="#">
-                                <h2 class="nav-title">판매자서비스</h2>
-                                <i class="fa-solid fa-caret-down"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-item f-icon">
-                            <a href="#">
-                                <h2 class="nav-title">파트너센터</h2>
-                                <i class="fa-solid fa-caret-down"></i>
-                            </a>
-                            
-                        </li>
-                    </ul>
-                </div>
-            
-            </div>
-            <div class="container-bottom">
-                <div class="f-left">
-                    <h3 class="footer-title">(주) 넥스파란</h3>
-                    <ul class="footer-title-list">
-                        <li class="footer-title-item">
-                            <span>대표이사 : 전민수</span>
-                        </li>
-                        <li class="footer-title-item">
-                            <span>전라특별자치도 군산시 하나운로 48 00동 00호</span>
-                        </li>
-                        <li class="footer-title-item">
-                            <a href="#">
-                                <span>사업자등록번호 : 140-88-02018</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="footer-title-list">
-                        <li class="footer-title-item">
-                            <span>E-mail : help@gmail.com</span>
-                        </li>
+                    <ul class="ul_li ul-btn">
+                        <li><a href="#">홈페이지</a></li>
+                        <li><a href="#">모바일</a></li>
+                        <li><a href="#">플러그인</a></li>
+                        <li><a href="#">견적/제작 문의</a></li>
+                        <li><a href="#">제작방법</a></li>
                     </ul>
 
-                    <ul class="footer-title-list">
-                        <li class="footer-title-item">
-                        </li>
+                    <ul class="ul_li ul-text">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">고객센터</a></li>
                     </ul>
-                    
 
-                    <ul class="footer-title-list">
-                        <li class="footer-title-item">
-                            <p class="copyright">
-                                Copyright &copy; <a href="#">Nexparan</a> all rights reserved.
-                            </p>
-                    
-                        </li>
-                    </ul>
-                </div>
-                <div class="f-right">
-                    <h3 class="footer-title">고객센터</h3>
-                    <ul class="footer-title-list">
-                        <li class="footer-title-item">
-                            <span>운영시간 : 평일 09:00 ~ 18:00</span>
-                        </li>
-                        <li class="footer-title-item">
-                            <a href="#">
-                                <span class="bold"><b>고객센터바로가기</b></span>
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </a>
-                            
-                        </li>
-                    </ul>
-                    <ul class="footer-title-list">
-                        <li>
-                            <div class="f-img">
-                                <img src="/assets/icon/qr.png">
-                                <div>
-                                    <span class="title">APP 다운로드</span>
-                                    <span class="text">스마트폰으로 QR코드 스켄</span>
-                                </div>
-                                
+                    <div class="ul_li nav-btn-wrap">
+                        <div class="user-btn-wrap">
+                            <div class="user-btn">
+                                <a href="#">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-
-
-        <!-- Modal -->
-        <div class="modal-body">
-        
-            <div id="modalContainer" class="hidden">
-                <div id="modalContent">
-                    <button id="modalCloseButton"><i class="fa-solid fa-xmark"></i></button>
-                    <div class="m-wrapper">
-                        <div class="m-container">
-                            <div class="sign-up-container">
-                                <form class="modal-form">
-                                    <h1>Sign up</h1>
-                                    <div class="social-links">
-                                        <div>
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        </div>
-                                        <div>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                        </div>
-                                        <div>
-                                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <!-- <span>이메일을 등록하여 가입해주세요.</span> -->
-                                    <input type="text" placeholder="Name">
-                                    <input type="email" placeholder="Email">
-                                    <input type="password" placeholder="Password">
-                                    <button class="form_btn">가입하기</button>
-                                </form>
-                            </div>
-                            <div class="sign-in-container">
-                                <form class="sign-in modal-form">
-                                    <h1>Log In</h1>
-                                    <div class="social-links">
-                                        <div>
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        </div>
-                                        <div>
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                        </div>
-                                        <div>
-                                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <!-- <span>or use your account</span> -->
-                                    <input type="email" placeholder="이메일을 입력해주세요.">
-                                    <input type="password" placeholder="비밀번호를 입력해주세요">
-                                    <button class="form_btn">로그인하기</button>
-                                </form>
-                            </div>
-                            <div class="overlay-container">
-                                <div class="overlay-left">
-                                    <h1>반갑습니다.</h1>
-                                    <p>귀하의 계정으로 로그인해주세요.</p>
-                                    <button id="signIn" class="overlay_btn">로그인하러가기</button>
-                                </div>
-                                <div class="overlay-right">
-                                    <h1>안녕하세요.</h1>
-                                    <p>귀하의 계정으로 가입해주세요</p>
-                                    <button id="signUp" class="overlay_btn">Sign up</button>
-                                </div>
+                        </div>
+                        
+                        <div class="bars-btn-wrap">
+                            <div class="bars action" onclick="actionToggle();">
+                                <input type="checkbox" id="icon-bars">
+                                <label for="icon-bars">
+                                    <span class="top"></span>
+                                    <span class="middle"></span>
+                                    <span class="bottom"></span>
+                                </label>
+                                <ul class="mini-nav">
+                                    <li><img src="" alt="">홈페이지</li>
+                                    <li><img src="" alt="">모바일</li>
+                                    <li><img src="" alt="">플러그인</li>
+                                    <li><img src="" alt="">견적/제작 문의</li>
+                                    <li><img src="" alt="">제작방법</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </nav>
+        
+        <!-- Top (Search, Chat, Top) btn -->
+
+        <div class="search-wrapper">
+            <div class="input-holder">
+                <input type="text" class="search-input" placeholder="검색어를 입력해주세요" />
+                <button class="search-icon" onclick="searchToggle(this, event);">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </button>
+            </div>
+            <span class="close" onclick="searchToggle(this, event);">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </div>
+        
+        <div class="chat-btn-wrap">
+            <div class="chat-btn">
+            <i class="fa-solid fa-headset"></i>
+            <!-- <div class="item-text">문의하기</div> -->
+            </div>
+            <!-- <div class="triangle"></div> -->
+        </div>
+
+        <div class="top-btn">TOP</div>
+
+        <div class="scroll-down-wrap">
+            <div class="scroll-down">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
 
 
-        <!-- menu-bottom -->
-        <div class="menu-bottom desktop-hide">
-            <ul class="flexitem">
-                <li>
-                    <a href="#0">
-                        <i class="fa-solid fa-house"></i>
-                        <span>게시판</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#0">
-                        <i class="fa-solid fa-house"></i>
-                        <span>알림</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#0">
-                        <i class="fa-solid fa-house"></i>
-                        <span>홈</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#0" class="t-search">
-                        <i class="fa-solid fa-house"></i>
-                        <span>검색</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#0">
-                        <i class="fa-solid fa-user"></i>
-                        <span>사용자</span>
-                        <!-- <div class="fly-item">
-                            <span class="item-number">0</span>
-                        </div> -->
-                    </a>
-                </li>
-            </ul>
-        </div>
+
+        <!-- bottom-navigation -->
+
+    <div class="bottom-nav">
+        <ul class="bottom-nav-content">
+            <li class="bottom-nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>home</span>
+            </li>
+            <li class="bottom-nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>home</span>
+            </li>
+            <li class="bottom-nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>home</span>
+            </li>
+            <li class="bottom-nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>home</span>
+            </li>
+            
+        
+        </ul>
+
     </div>
 
 
+    </header>
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./js/script.js"></script>
+    <!-- main -->
+    <main>
+        <!-- ScrollSpy-Indicator -->
+        <div class="scroll-indicator">
+            <a href="#section_01" class="active_scroll" data-section="section_01"></a>
+            <a href="#section_02" data-section="section_02"></a>
+            <a href="#section_03" data-section="section_03"></a>
+            <a href="#section_04" data-section="section_04"></a>
+            <a href="#section_05" data-section="section_05"></a>
+            <a href="#section_06" data-section="section_06"></a>
 
+            <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- section 1 -->
+        <section id="section_01">
+            <div class="section-wrap">
+                <div class="section-01-content">
+                    <div class="title-wrap">
+                        <div class="title-item-small">
+                            <span>WEB / APP / PLUGIN</span>
+                        </div>
+                        <div class="title-item-large">
+                            홈페이지 제작,<br> 모바일, 플러그인 개발 전문업체  <br> 넥스파란입니다.
+                        </div>
+                        <div class="title-item-medium">
+                            <span>전문가와 함께하는 WEB, APP, PLUGIN <br>기획ㆍ디자인ㆍ개발</span>
+                        </div>
+                        <div class="btn-wrap">
+                            <button class="btn-pot">포트폴리오</button>
+                            <button class="btn-price">견적문의</button>
+                        </div>
+                    </div>
+                    <div class="s01-title-img">
+                    위로 이미지 자동슬라이드 또는 움직이는 이미지
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+
+        <!-- section 2 -->
+        <section id="section_02">
+            <div class="section-wrap-nopadding">
+                <div class="section-02-content">
+                    <div class="web-app-wrap">
+                        <div class="text">
+                            <div class="title">
+                                <span>반응형 웹 제작 고객 맞춤 웹 / 앱 개발</span>
+                                <button class="btn-price">견적문의<i class="fa-solid fa-angles-right"></i></button>
+                                
+                            </div>
+                            <div class="device">
+                                <div class="img-pc"><img src="./Project_02/assets/device/Apple iMac Retina.png" alt="pc"><span></span></div>
+                                <div class="img-note"><img src="./Project_02/assets/device/Apple Macbook Pro 15_ Space Grey.png" alt="notebook"><span></span></div>
+                                <div class="img-tablet"><img src="./Project_02/assets/device/iPad-silhouette-mockup.png" alt="tablet"><span></span></div>
+                                <div class="img-mobile"><img src="./Project_02/assets/device/iPhone15-Handheld.png" alt="mobile"><span></span></div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="web-app-port">
+                        
+                        <div class="port-item-wrap">
+                            <div class="more-btn-left">
+                                더보기
+                                <i class="fa-solid fa-angles-left"></i>
+                            </div>
+
+                            <div class="port-item">
+                                <img src="./Project_02/assets/portfolio/media_01.png">
+                            </div>
+                            <div class="port-item">
+                                <img src="./Project_02/assets/portfolio/media_02.png">
+                            </div>
+                            <div class="port-item">
+                                <img src="./Project_02/assets/portfolio/media_01.png">
+                            </div>
+                            <div class="port-item">
+                                <img src="./Project_02/assets/portfolio/media_02.png">
+                            </div>
+                            <div class="port-item">
+                                <img src="./Project_02/assets/portfolio/media_01.png">
+                            </div>
+                            <div class="port-item">
+                                <img src="./Project_02/assets/portfolio/media_02.png">
+                            </div>
+
+                            <div class="more-btn-right">
+                                더보기
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section 3 -->
+        <section id="section_03">
+            <div class="section-wrap-nopadding">
+                <div class="section-03-content">
+        
+                    <div class="plugin-wrap">
+                        <div class="title">
+                            <span>워드프레스 사이트에서 사용하는 플러그인</span>
+                            <button class="btn-price">구매하기<i class="fa-solid fa-angles-right"></i></button>
+                        </div>
+    
+                        <div class="flow-banner-wrap">
+                            <div class="flow_banner">
+                                <ul class="list">
+                                    <li>PLUG-IN-01</li>
+                                    <li>PLUG-IN-02</li>
+                                    <li>PLUG-IN-03</li>
+                                    <li>PLUG-IN-04</li>
+                                    <li>PLUG-IN-05</li>
+                                    <li>PLUG-IN-06</li>
+                                    <li>PLUG-IN-07</li>
+                                    <li>PLUG-IN-08</li>
+                                    <li>PLUG-IN-09</li>
+                                    <li>PLUG-IN-10</li>
+                                    <li>PLUG-IN-11</li>
+                                    <li>PLUG-IN-12</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="plugin-slider-wrap">
+                            <div class="slider-item">
+                                <div class="slider-item-top">
+                                    <div class="plug-icon">
+                                        <img src="./Project_02/assets/icon/icons8-link-96.png">
+                                        <p class="text-title">Lorem ipsum dolo sit amet</p>
+                                    </div>
+                                    <div class="plug-text">
+                                        <p class="text-con">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="plug-btn">
+                                    <button class="now-btn">지금구매</button>
+                                    <button class="more-content-btn">더 상세히</button>
+                                </div>
+                            </div>
+                            
+                            <div class="slider-item">
+                                <div class="slider-item-top">
+                                    <div class="plug-icon">
+                                        <img src="./Project_02/assets/icon/icons8-link-96.png">
+                                        <p class="text-title">Lorem ipsum dolo sit amet</p>
+                                    </div>
+                                    <div class="plug-text">
+                                        <p class="text-con">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="plug-btn">
+                                    <button class="now-btn">지금구매</button>
+                                    <button class="more-content-btn">자세히 보기</button>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-item-top">
+                                    <div class="plug-icon">
+                                        <img src="./Project_02/assets/icon/icons8-link-96.png">
+                                        <p class="text-title">Lorem ipsum dolo sit amet</p>
+                                    </div>
+                                    <div class="plug-text">
+                                        <p class="text-con">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="plug-btn">
+                                    <button class="now-btn">지금구매</button>
+                                    <button class="more-content-btn">자세히 보기</button>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-item-top">
+                                    <div class="plug-icon">
+                                        <img src="./Project_02/assets/icon/icons8-link-96.png">
+                                        <p class="text-title">Lorem ipsum dolo sit amet</p>
+                                    </div>
+                                    <div class="plug-text">
+                                        <p class="text-con">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="plug-btn">
+                                    <button class="now-btn">지금구매</button>
+                                    <button class="more-content-btn">자세히 보기</button>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="slider-item-top">
+                                    <div class="plug-icon">
+                                        <img src="./Project_02/assets/icon/icons8-link-96.png">
+                                        <p class="text-title">Lorem ipsum dolo sit amet</p>
+                                    </div>
+                                    <div class="plug-text">
+                                        <p class="text-con">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="plug-btn">
+                                    <button class="now-btn">지금구매</button>
+                                    <button class="more-content-btn">자세히 보기</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section 4 -->
+        <section id="section_04">
+            <div class="section-wrap">
+                <div class="section-04-content">
+        
+                    <div class="benefit-text-item">
+                        <span class="text-small">넥스파란에서</span>
+                        <span class="text-large">웹 / 앱 제작시 드리는 다양한 혜택</span>
+                    </div>
+                    <div class="benefit-box-wrap">
+                        <div class="benefit-box-item">
+                            <div class="img-circle-wrap">
+                                <div class="btn-circle"></div>
+                                <div class="btn-circle-small"></div>
+                                <img src="./Project_02/assets/icon/icons8-web-100.png" alt="">
+                            </div>
+        
+                            <span class="item-title">도메인 1년 무료</span>
+                            <span class="item-sub-title">
+                                도메인 서비스를 1년동안 <br>무료로 제공해드립니다.
+                            </span>
+                        </div>
+                        <div class="benefit-box-item">
+                            <img src="./Project_02/assets/icon/icons8-web-100.png" alt="">
+                            <span class="item-title">웹 서버 1년 무료</span>
+                            <span class="item-sub-title">웹 서버를 1년 동안 <br>무료로 제공해 드립니다.</span>
+                        </div>
+                        <div class="benefit-box-item">
+                            <img src="./Project_02/assets/icon/icons8-web-100.png" alt="">
+                            <span class="item-title">디자인 유지보수</span>
+                            <span class="item-sub-title">간단한 텍스트 수정 및 이미지 교체 서비스를<br>1개월 동안 무료로 제공합니다.</span>
+                        </div>
+                        <div class="benefit-box-item">
+                            <img src="./Project_02/assets/icon/icons8-web-100.png" alt="">
+                            <span class="item-title">퍼블리싱 유지보수</span>
+                            <span class="item-sub-title">링크 수정 및 컨텐츠 순서 변경을 <br>1개월 동안 무료로 제공해 드립니다.</span>
+                        </div>
+                        <div class="benefit-box-item">
+                            <img src="./Project_02/assets/icon/icons8-web-100.png" alt="">
+                            <span class="item-title">관리 상담 모듈 무상 제공</span>
+                            <span class="item-sub-title">고객 데이터 베이스와 <br>관리 구축 서비스를 무상으로 제공합니다.</span>
+                        </div>
+                        <div class="benefit-box-item">
+                            <img src="./Project_02/assets/icon/icons8-web-100.png" alt="">
+                            <span class="item-title">네이버 검색등록 + SEO 검색 노출</span>
+                            <span class="item-sub-title">검색광고 상위 노출을 위해 <br>메타태그를 삽입해 드립니다.</span>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section 5 -->
+        <section id="section_05">
+            <div class="section-wrap">
+                <div class="section-05-content">
+                    <div class="s05-main-top-wrap">
+                        <div class="s05-main-top-left">
+                            <div class="main-title">포트폴리오</div>
+                            <div class="sub-title">
+                                고객님의 브랜드가 성장할 수 있도록<br>
+                                최고의 파트너로서 가치와 성공을 드리겠습니다.
+                            </div>
+                        </div>
+                        <div class="s05-main-top-right">
+                            <button class="active-s06">홈페이지</button>
+                            <button>모바일</button>
+                            <button>상세페이지</button>
+                            <button>플러그인</button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="item-wrap">
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_01.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_02.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_01.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_02.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_01.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_02.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_01.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_02.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_01.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_02.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_01.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_02.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_02.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_01.png">
+                        </div>
+                        <div class="s05-box-item">
+                            <img src="./Project_02/assets/portfolio/media_02.png">
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <!-- section 6 -->
+        <section id="section_06">
+            <div class="section-wrap">
+                <div class="section-06-content">
+
+                    <div class="main-title">
+                        간편한 견적신청 문의
+                    </div>
+                    <div class="sub-title">
+                        견적요청/상담문의 주시면 빠른 검토 후 피트백드리겠습니다.
+                    </div>
+
+                    <div class="s06-main-top-left">
+
+
+                        <form method="">
+                            <div class="input-top-wrap">
+                                <div class="name-input">
+                                    <label>이름</label>
+                                    <input type="text" placeholder="이름을 입력해주세요">
+                                </div>
+                                <div class="tel-input">
+                                    <label>연락처</label>
+                                    <input type="text" placeholder="이름을 입력해주세요">
+                                    
+                                </div>
+                                <div class="namae-input">
+                                    <label>이메일</label>
+                                    <input type="text" placeholder="이름을 입력해주세요">
+                                    
+                                </div>
+                                
+                                <div class="namae-input">
+                                    <label>첨부파일</label>
+                                    <input type="text" placeholder="이름을 입력해주세요">
+                                </div>
+                            </div>
+
+                            <div class="mun-text">
+                                <textarea type=""></textarea>
+                            </div>
+                            
+                        </form>
+
+                        
+                    </div>
+        
+                </div>
+
+                <footer>
+                    <div class="footer-wrap ul_li">
+                        <div class="f-left-content">
+                            <div class="footer-logo">
+                                <span class="f-text">NexParan</span>
+                            </div>
+                            <div class="footer-text">
+                                <div class="f-text">전라특별자치도 군산시 하나운로 48 00동 000호</div>
+                                <div class="f-text">사업자등록번호 : 140-88-02018</div>
+                                <div class="f-text">E-mail : help@gmail.com</div>
+                            </div>
+                        </div>
+    
+                        <div class="f-center-content ul_li">
+                            <div class="footer-item">
+                                <span class="ul-title">회사소개</span>
+                                <ul class="ul_li_block">
+                                    <li><a href="#">개인정보처리방침</a></li>
+                                    <li><a href="#">이용약관</a></li>
+                                    <li><a href="#">청소년보호방침</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-item">
+                                <span class="ul-title">고객지원</span>
+                                <ul class="ul_li_block">
+                                    <li><a href="#">유지보수</a></li>
+                                    <li><a href="#">Q & A</a></li>
+                                    <li><a href="#">교환환불</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-item">
+                                <span class="ul-title">포트폴리오</span>
+                                <ul class="ul_li_block">
+                                    <li><a href="#">홈페이지(Web)</a></li>
+                                    <li><a href="#">모바일(App)</a></li>
+                                    <li><a href="#">플러그인</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="f-right-content">
+                            <div class="f-l-c-wrap">
+                                <div class="footer-tel">
+                                    <span class="tel-number">1500-0099</span>
+                                    <span class="tel-time">오전 9시 ~ 오후 6시(토요일, 공휴일 휴무)</span>
+                                </div>
+                                <div class="ask-link ul_li">
+                                    <div><a href="#">1:1문의하기</a></div>
+                                    <div><a href="#">자주 묻는 질문</a></div>
+                                </div>
+                            </div>
+                            <div class="f-l-c-wrap">
+                                <div class="copyright">
+                                    <span>Copyright</span>
+                                    <span>&copy;</span>
+                                    <span><a href="#">NEXPARAN</a> </span>
+                                    <span>ALL RIGHTS RESERVED.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- footer -->
+        
+        
+        </section>
+
+    </main>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+    <script type="text/javascript" src="/Project_02/script/scrpt.js"></script>
+    <script defer src="/Project_02/script/scroll_indicator.js"></script>
+    <script defer src="/Project_02/script/bottom-nav.js"></script>
 </body>
-
 </html>
